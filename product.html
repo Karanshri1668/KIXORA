@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KIXORA Product</title>
+
+  <link rel="stylesheet" href="css/pro-detail.css">
+</head>
+<body>
+<div class="product-page">
+
+    <!-- BACK -->
+    <div class="back-btn" onclick="history.back()">
+        ← Back
+    </div>
+
+    <div class="product-container">
+
+        <!-- LEFT THUMBNAILS -->
+
+        <div class="gallery">
+
+            <div id="thumbContainer">
+
+            </div>
+
+        </div>
+
+
+        <!-- CENTER IMAGE -->
+
+        <div class="main-view">
+
+            <div class="shoe-glow"></div>
+
+            <img
+            id="productImage"
+            >
+
+        </div>
+
+
+        <!-- RIGHT DETAILS -->
+
+        <div class="details">
+
+            <p class="brand" id="productBrand"></p>
+
+            <h1 id="productTitle"></h1>
+
+            <p class="price" id="productPrice"></p>
+
+
+            <!-- SIZES -->
+
+            <div class="sizes">
+
+                <h3>Select Size</h3>
+
+                <div class="size-options">
+
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- COLOR -->
+
+            <div class="color-wrap">
+
+                <h3>Color</h3>
+
+                <div
+                class="color-circle"
+                id="colorCircle"
+                >
+                </div>
+
+            </div>
+
+
+            <!-- QUANTITY -->
+
+            <div class="quantity">
+
+                <button>-</button>
+
+                <span>1</span>
+
+                <button>+</button>
+
+            </div>
+
+
+            <!-- BUTTONS -->
+
+            <div class="buttons">
+
+                <button class="cart-btn">
+
+                    Add To Cart
+
+                </button>
+
+                <button class="buy-btn">
+
+                    Buy Now
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- MORE SHOES -->
+
+    <div class="more-section">
+
+        <h1>
+            More Kicks
+        </h1>
+
+        <div
+        id="moreShoes"
+        class="more-grid"
+        >
+        </div>
+
+        <!-- <button
+        id="loadMore"
+        class="load-btn"
+        >
+
+        Explore More
+
+        </button> -->
+
+        <!-- From Uiverse.io by Javierrocadev --> 
+<button id="loadMore" class="relative border hover:border-sky-600 duration-500 group cursor-pointer text-sky-50  overflow-hidden h-14 w-56 rounded-md bg-sky-800 p-2 flex justify-center items-center font-extrabold">
+  <div class="absolute z-10 w-48 h-48 rounded-full group-hover:scale-150 transition-all  duration-500 ease-in-out bg-sky-900 delay-150 group-hover:delay-75"></div>
+  <div class="absolute z-10 w-40 h-40 rounded-full group-hover:scale-150 transition-all  duration-500 ease-in-out bg-sky-800 delay-150 group-hover:delay-100"></div>
+  <div class="absolute z-10 w-32 h-32 rounded-full group-hover:scale-150 transition-all  duration-500 ease-in-out bg-sky-700 delay-150 group-hover:delay-150"></div>
+  <div class="absolute z-10 w-24 h-24 rounded-full group-hover:scale-150 transition-all  duration-500 ease-in-out bg-sky-600 delay-150 group-hover:delay-200"></div>
+  <div class="absolute z-10 w-16 h-16 rounded-full group-hover:scale-150 transition-all  duration-500 ease-in-out bg-sky-500 delay-150 group-hover:delay-300"></div>
+  <p class="z-10">Discover More</p>
+</button>
+
+
+
+
+    </div>
+
+</div>
+<script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/pro-detail.js"></script>
+</body>
+</html>

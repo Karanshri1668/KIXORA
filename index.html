@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KIXORA</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/hover-min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+  
+<!-- NAVBAR -->
+<nav class="navbar">
+
+  <div class="logo">KIXORA</div>
+
+  <ul class="nav-links">
+    <a href="#home"><li class="hvr-underline-from-center">Home</li></a>
+    <a href="#shop"><li class="hvr-underline-from-center">Shop</li></a>
+    <a href="#drops"><li class="hvr-underline-from-center">Drops</li></a>
+    <a href="#contact"><li class="hvr-underline-from-center">Contact</li></a>
+  </ul>
+
+  <!-- SEARCH -->
+  <div class="search-box">
+    <input 
+      type="text"
+      id="searchInput"
+      placeholder="Search kicks..."
+    >
+
+    <span class="search-icon">🔍</span>
+  </div>
+
+  <button class="nav-btn">Cart</button>
+
+</nav>
+
+  <!-- HERO -->
+<section id="home" class="hero">
+
+  <!-- LEFT SIDE -->
+  <div class="hero-content">
+    <h1>Own The Street.</h1>
+    <p>Step into the future of streetwear.</p>
+    <button class="cta hvr-float-shadow">
+      Shop Now
+    </button>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="hero-image">
+
+    <div class="shoe-shape" id="shoeShape"></div>
+
+    <img
+      id="heroShoe"
+      src="assets/images/shoe-000.png"
+      alt=""
+    >
+
+    <div class="slider-controls">
+
+      <button id="prevBtn">
+        &#8592;
+      </button>
+
+      <button id="nextBtn">
+        &#8594;
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <section class="products">
+  <h2>Featured Kicks</h2>
+
+  <div class="product-grid">
+
+    <div class="card">
+      <img src="assets/images/shoes/shoe-143.png">
+      <h3>KIXORA Air Flex</h3>
+      <p>₹4,999</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/shoes/shoe-134.png">
+      <h3>KIXORA Street Pro</h3>
+      <p>₹5,499</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/shoes/shoe-123.png">
+      <h3>KIXORA Neo Run</h3>
+      <p>₹6,299</p>
+      <button>Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+<section id="shop" class="showcase">
+  <h2>Explore The Collection</h2>
+
+  <div class="dock-wrapper" id="dockWrapper"></div>
+</section>
+
+<section class="mindset">
+
+    <div class="noise"></div>
+
+    <h1 class="jp-text">
+        止まるな
+    </h1>
+
+    <h2 class="roman-text">
+        TOMARU NA
+    </h2>
+
+    <p>
+        Keep moving. Never blend in.
+    </p>
+
+</section>
+
+<section id="drops" class="drop-zone">
+
+    <div class="drop-left">
+
+        <p class="drop-tag">
+            ⚡ LIMITED DROP
+        </p>
+
+        <h1>
+            KIXORA VORTEX 01
+        </h1>
+
+        <p class="drop-desc">
+            Built for streets. Designed for movement.
+            Limited release for the next generation.
+        </p>
+
+        <div class="countdown">
+
+            <div>
+                <span id="days">00</span>
+                <small>Days</small>
+            </div>
+
+            <div>
+                <span id="hours">00</span>
+                <small>Hours</small>
+            </div>
+
+            <div>
+                <span id="minutes">00</span>
+                <small>Minutes</small>
+            </div>
+
+            <div>
+                <span id="seconds">00</span>
+                <small>Seconds</small>
+            </div>
+
+        </div>
+
+        <button class="notify-btn">
+            Notify Me
+        </button>
+
+    </div>
+
+
+    <div class="drop-right">
+
+        <div class="drop-glow"></div>
+
+        <img
+        src="assets/images/shoes/shoe-020.png"
+        class="drop-shoe"
+        id="dropShoe"
+        >
+
+    </div>
+
+</section>
+
+<section id="contact" class="contact-genz">
+
+    <h1 class="contact-title">
+        STAY IN THE KIXORA LOOP
+    </h1>
+
+    <p class="contact-sub">
+        Street isn't a place. It's an attitude.
+    </p>
+
+
+    <!-- TOP CARDS -->
+
+    <div class="contact-cards">
+
+        <div class="contact-card">
+
+            <div class="icon">💬</div>
+
+            <h3>Customer Service</h3>
+
+            <p>09:30 AM → 05:00 PM</p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="icon">📞</div>
+
+            <h3>Call Us</h3>
+
+            <p>+91 9876543210</p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="icon">✉️</div>
+
+            <h3>Get In Touch</h3>
+
+            <p>hello@kixora.com</p>
+
+        </div>
+
+    </div>
+
+
+    <!-- LINKS -->
+
+    <div class="footer-links">
+
+        <div>
+
+            <h3>Collections</h3>
+
+            <span>Men</span>
+            <span>Women</span>
+            <span>Sneakers</span>
+            <span>Streetwear</span>
+
+        </div>
+
+
+        <div>
+
+            <h3>Support</h3>
+
+            <span>About Us</span>
+            <span>Contact</span>
+            <span>FAQs</span>
+
+        </div>
+
+
+        <div>
+
+            <h3>KIXORA</h3>
+
+            <p>
+                Designed for movement.
+                Built for streets.
+                Worn by the future.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- SOCIAL -->
+
+    <div class="social-row">
+
+        <div class="social">F</div>
+        <div class="social">X</div>
+        <div class="social">I</div>
+        <div class="social">Y</div>
+
+    </div>
+
+</section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

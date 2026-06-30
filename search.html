@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>KIXORA Search</title>
+
+<link
+rel="stylesheet"
+href="css/search.css"
+>
+
+</head>
+
+<body>
+    
+<!-- BACK -->
+    <!-- NAVBAR -->
+<nav class="navbar">
+
+        <div class="back-btn" onclick="history.back()">
+        ← Back
+    </div>
+
+  <div class="logo">KIXORA</div>
+
+  <!-- <ul class="nav-links">
+    <a href="#home"><li class="hvr-underline-from-center">Home</li></a>
+    <a href="#shop"><li class="hvr-underline-from-center">Shop</li></a>
+    <a href="#drops"><li class="hvr-underline-from-center">Drops</li></a>
+    <a href="#contact"><li class="hvr-underline-from-center">Contact</li></a>
+  </ul> -->
+
+  <!-- SEARCH -->
+  <div class="search-box">
+    <input 
+      type="text"
+      id="searchInput"
+      placeholder="Search kicks..."
+    >
+
+    <span class="search-icon">🔍</span>
+  </div>
+
+  <button class="nav-btn">Cart</button>
+
+</nav>
+
+<div class="search-page">
+
+<h1>
+Search Results
+</h1>
+
+<p id="resultCount"></p>
+
+<div
+id="results"
+class="results-grid"
+>
+</div>
+
+</div>
+
+<script src="js/search.js"></script>
+
+</body>
+
+</html>
